@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" type="image/x-icon">
+</head>
+<body>
+    <section class = whatsapp-right-layout>
+        <header class = 'header-right-menu-container'>
+            <aside id = 'header-menu-bar'>
+                <div id = header-menu-bar-container>
+                     <img onclick="backMenuHeader()" src="/src/icons/backicon.png" alt="">
+                    <p>Perfil</p>
+                </div>
+                <div id = header-menu-bar-prof>
+                    <img src="/src/fakePersons/person.jpg" alt="">
+                </div>
+                <div class = header-menu-infos-container>
+                    <p class = 'header-menu-topic'>Nome</p>
+                    <p class = 'header-menu-desc'>Luis Fernando</p>
+                </div>
+                <div id = 'header-menu-wa'>
+                    <p>Esse não é seu nome de usuário e nem seu PIN. Esse nome será visível para seus contatos do WhatsApp</p>
+                </div>
+                <div style="height: 120px" class = 'header-menu-infos-container'>
+                    <p class = 'header-menu-topic'>Recado</p>
+                    <p class = 'header-menu-desc'>"Codando"</p>
+                </div>
+            </aside>
+            <div id = header-menu-container-items>
+                <img onclick="headerLeftMenu()" src="/src/fakePersons/person.jpg" alt="">
+                <div id = header-menu-icons>
+                    <img src="/src/icons/statusicon.png" alt="">
+                    <img src="/src/icons/menssageicon.png" alt="">
+                    <img src="/src/icons/configicon.png" alt="">
+                </div>
+            </div>
+        </header>
+        <form id = 'form-right-header' action="" method="POST">
+            <img src="/src/icons/searchicon.png" alt="">
+            <input id = 'form-right-input' type="search" placeholder="Pesquisar ou começar uma nova conversa">
+        </form>
+        <section class = 'section-talk-container'>
+            <div class = 'talk-bar active'>
+                <img class = contact-img src="/src/fakePersons/person1.jpg" alt="">
+                <div class = 'talk-bar-contact-items'>
+                    <p class = contact>Rafaela</p>
+                    <p class = men>😜😜😜😜😜</p>
+                </div>
+            </div>
+            <div class = 'talk-bar'>
+                <img class = contact-img src="/src/fakePersons/person2.jpg" alt="">
+                <div class = 'talk-bar-contact-items'>
+                    <p class = contact>Carlos</p>
+                    <p class = men>Em desenvolvimento...</p>
+                </div>
+            </div>
+            <div class = 'talk-bar'>
+                <img class = contact-img src="/src/fakePersons/person3.jpg" alt="">
+                <div class = 'talk-bar-contact-items'>
+                    <p class = contact>Arnildo</p>
+                    <p class = men>Em desenvolvimento...</p>
+                </div>
+            </div>
+            <div class = 'talk-bar'>
+                <img class = contact-img src="/src/fakePersons/person4.jpg" alt="">
+                <div class = 'talk-bar-contact-items'>
+                    <p class = contact>Kabal</p>
+                    <p class = men>Em desenvolvimento...</p>
+                </div>
+            </div>
+            <div class = 'talk-bar'>
+                <img class = contact-img src="https://thispersondoesnotexist.com/image" alt="">
+                <div class = 'talk-bar-contact-items'>
+                    <p class = contact>Camila</p>
+                    <p class = men>Em desenvolvimento...</p>
+                </div>
+            </div>
+            <h4 id = 'not-have-talk'>Você não tem conversas no momento.</h4>
+        </section>
+    </section>
+    <section class = whatsapp-left-layout>
+        <header class = 'header-left-menu-container'>
+            <div id = header-menu-container-items>
+                <img id = 'contact-image' src="/src/fakePersons/person1.jpg" alt="">
+                <p id = header-menu-contact>Rafaela</p>
+            </div>
+            <section class = section-talk-bar-container>
+                <div class = contact-bar-men-container>
+                    <p class = contact-section-bar-men>😜😜😜😜😜</p>
+                    <p class = contact-section-bar-men>😜😜😜😜😜</p>
+                    <p class = contact-section-bar-men>Testando</p>
+                    <p class = contact-section-bar-men>Testando</p>
+                    <p class = contact-section-bar-men>😜😜😜😜😜</p>
+                    <p class = contact-section-bar-men>😜😜😜😜😜</p>
+                </div>
+            </section>
+            <div id = form-left-header>
+                <div id = form-left-icons>
+                    <img src="/src/icons/emojiicon.png" alt="">
+                    <img src="/src/icons/anexicon.png" alt="">
+                </div>
+                <input autocomplete="off" onclick="sendMen(this)" id = 'form-left-input' type="text" placeholder="Digite uma mensagem">
+                <div id = form-left-icons-phone>
+                    <img src="/src/icons/microphone.png" alt="">
+                </div>
+            </div>
+        </header>
+    </section>
+    <script src="/app/app.js"></script>
+</body>
+</html>
