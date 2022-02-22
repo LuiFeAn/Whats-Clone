@@ -178,7 +178,7 @@ body{
     background: url(https://www.argali.com.br/wp-content/uploads/2017/09/WhatsApp.jpg);
     background-size: cover;
     width: 100%;
-    height:600px;
+    height:620px;
     background-size: contain;
     overflow-y: scroll;
 }
@@ -193,7 +193,7 @@ body{
     background-color: #F0F0F0;
     display: flex;
     height: 60px;
-    padding-top: 30px;
+    padding-top: 8px;
 }
 #form-left-input{
     width: 800px;
